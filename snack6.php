@@ -26,9 +26,9 @@ $db = [
 ];
 
 $teacher= array_slice($db,0,true);
-var_dump($teacher);
+// var_dump($teacher);
 $pm= array_slice($db,1,true);
-var_dump($pm);
+// var_dump($pm);
 
 ?>
 
