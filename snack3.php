@@ -42,11 +42,11 @@ $posts =
     '03/01/2022'=>
     [
         ['title'=> 'I ravanelli sono malvagi',
-        'author' => 'Sconosciuto',
+        'author' => 'Adam Kadmon',
         'text' => 'Un avvertimento che può salvarvi la vita'
         ],
-        ['title'=> 'Io sono Giovanna',
-        'author' => 'Giovanna',
+        ['title'=> 'Io sono Giorgia',
+        'author' => 'Giorgia',
         'text' => 'Sono una madre'
         ],
     ]
@@ -67,12 +67,12 @@ $posts =
         
             foreach($posts as $key => $value){
         ?>
-                <h5> Data :<?php echo $key; ?>  </h5>
+                <h5 style="color: grey"> Data pubblicazione :<?php echo $key; ?>  </h5>
         <?php
                 for ($i=0; $i < count($value) ; $i++) { 
         ?>
                     <div>
-                        <h3> " <?php echo $value[$i]['title'];?> " </h3>
+                        <h3 style="color: red"> " <?php echo $value[$i]['title'];?> " </h3>
                     </div>
                     <div>
                         <h4> Di <?php echo $value[$i]['author']; ?>  </h4>
