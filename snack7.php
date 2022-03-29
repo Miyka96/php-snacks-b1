@@ -32,7 +32,7 @@ $alunni= [
     ],
 ];
 
-var_dump($alunni);
+// var_dump($alunni);
 
 ?>
 
@@ -48,19 +48,24 @@ var_dump($alunni);
     
 <?php 
         
-        foreach($alunni as $alunno){
+        foreach($alunni as $element){
         
-                foreach($alunno as $key => $value){
-    ?>
-                <span>
-                    <?php echo $key, $value;?>
-                </span>
-                <br>
-    <?php   
-                };
-
+            echo $element['nome: '];
+            echo $element['cognome: '];
+            
+            for ($i=0; $i < count($element['voti: ']); $i++) { 
+                $voti= $element['voti: '];
+                $somma= array_sum($voti);
+                $media= $somma/ count($element['voti: ']);
+            };
+            echo round($media,1);
+?>
+            <br>
+            <br>
+<?php
         };
-    ?>
+
+?>
 
 </body>
 </html>
